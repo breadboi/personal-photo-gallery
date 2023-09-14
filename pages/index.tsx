@@ -9,6 +9,7 @@ import cloudinary from '../utils/cloudinary'
 import getBase64ImageUrl from '../utils/generateBlurPlaceholder'
 import type { ImageProps } from '../utils/types'
 import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
+import metaPreview from '../public/meta-preview.jpg';
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
@@ -31,11 +32,11 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         <title>Brett & Julie 2024</title>
         <meta
           property="og:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://engagement.brettcarney.com/og-image.jpg"
         />
         <meta
           name="twitter:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://engagement.brettcarney.com/og-image.jpg"
         />
       </Head>
       <main className="mx-auto max-w-[1960px] p-4">
